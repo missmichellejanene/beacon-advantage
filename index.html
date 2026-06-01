@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beacon Advantage Solutions | Living Your Signature Path™ — Pivot with Purpose</title>
+    <meta name="description" content="Beacon Advantage Solutions guides individuals, leaders, teams, and organizations through a science-based, human-centered coaching process in Atlanta, GA.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    navy: '#0B1F3B',
+                    'navy-dark': '#1a3558',
+                    gold: '#D4AF37',
+                    'gold-light': '#E4C65A',
+                    'gray-warm': '#F8F6F3',
+                    'gray-text': '#4A4A4A',
+                    'gray-medium': '#7A7A7A',
+                },
+                fontFamily: {
+                    serif: ['Crimson Pro', 'serif'],
+                    sans: ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Crimson Pro', serif; }
+    
+        .lighthouse-beam {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            overflow: hidden;
+        }
+        .lighthouse-beam::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 15%;
+            height: 200%;
+            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.07), rgba(255,255,255,0.04), rgba(212,175,55,0.07), transparent);
+            transform: skewX(-15deg);
+            animation: beam-sweep 8s ease-in-out infinite;
+        }
+        @keyframes beam-sweep {
+            0% { left: -20%; opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { left: 110%; opacity: 0; }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="lighthouse-beam"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-50 shadow-xl" style="background-color: #0B1F3B;">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center flex-shrink-0 gap-3" href="index.html">
+                    <img alt="Beacon Advantage Solutions" class="h-24 w-auto object-contain" style="mix-blend-mode:lighten;background:transparent" src="images/logo-new.png"></span>
+                    <span class="text-white font-serif text-lg font-medium hidden sm:block">Beacon Advantage Solutions</a>
+                <div class="hidden lg:flex items-center gap-6">
+                    <a class="text-sm font-medium text-gold" href="index.html">Home</a>
+                    <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="about.html">Who We Are</a>
+                    <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="services.html">What We Do</a>
+                    <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="testimonials.html">What Clients Say</a>
+                    <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="contact.html">Contact</a>
+                    <a class="text-sm font-semibold rounded-lg px-5 py-2.5 transition-all hover:opacity-90" href="https://calendly.com/bascoaching/30min" target="_blank" style="background-color: #D4AF37; color: #0B1F3B;">Book 30-Min Call</a>
+                </div>
+                <button class="lg:hidden text-white p-2" id="mobile-toggle" aria-label="Toggle menu">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+            <div class="lg:hidden hidden pb-4" id="mobile-menu">
+                <a class="block py-2 text-gold" href="index.html">Home</a>
+                <a class="block py-2 text-white" href="about.html">Who We Are</a>
+                <a class="block py-2 text-white" href="services.html">What We Do</a>
+                <a class="block py-2 text-white" href="testimonials.html">What Clients Say</a>
+                <a class="block py-2 text-white" href="contact.html">Contact</a>
+                <a class="block py-2 text-gold font-semibold" href="https://calendly.com/bascoaching/30min" target="_blank">Book 30-Min Call</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="relative min-h-screen flex items-center overflow-hidden" style="padding-top: 80px;">
+        <div class="absolute inset-0">
+            <img alt="People collaborating" class="w-full h-full object-cover" src="images/lighthouse-hero.png">
+            <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(11,31,59,0.55), rgba(11,31,59,0.35));"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-16">
+            <div class="max-w-3xl">
+                <div class="h-0.5 w-16 mb-6" style="background-color: #D4AF37;"></div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold text-white leading-tight mb-5">
+                    Lighting the Path from Insight to Aligned Action
+                </h1>
+                <p class="text-base text-gray-300 leading-relaxed mb-3">
+                    Every individual, professional, leader, and team has a <strong class="text-white">Signature Path</strong>™ — the unique intersection of natural abilities, values, motivations, and style. When work aligns with that path, energy rises, clarity sharpens, and impact expands. When it does not, even high performers feel drained, misaligned, or stuck.
+                </p>
+                <p class="text-base text-gray-300 leading-relaxed mb-5">
+                    <em class="text-gold font-serif text-xl block mb-3">"Your Signature Path: Navigating Pivots with Purpose"</em>Beacon Advantage Solutions' <strong class="text-white">Signature Path™ Alignment Experience</strong> guides individuals, leaders, teams, and organizations through a science-based, human-centered process so they can rediscover the work they were meant to do — and lead, contribute, and thrive with purpose.
+                </p>
+                <p class="text-sm mb-8" style="color: #B8964D;">Atlanta, GA</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a class="px-7 py-3.5 text-sm font-semibold rounded-lg text-center hover:opacity-90 transition-all" href="contact.html" style="background-color: #D4AF37; color: #0B1F3B;">Book a Consultation</a>
+                    <a class="px-7 py-3.5 border-2 border-white text-white text-sm font-semibold rounded-lg hover:bg-white hover:text-navy transition-all text-center" href="services.html">Explore Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTS CONTACT US WHEN -->
+    <section class="bg-gray-warm py-14">
+        <div class="max-w-5xl mx-auto px-6 lg:px-12">
+            <div class="text-center mb-8">
+                <div class="h-1 w-20 bg-gold mx-auto mb-4"></div>
+                <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-navy mb-4">Clients Contact Us When…</h2>
+                <p class="text-base text-gray-text max-w-2xl mx-auto">We work with individuals, leaders, teams, and organizations at defining moments.</p>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4 mb-8">
+                <div class="flex items-start gap-4">
+                    <i class="ri-arrow-right-circle-fill text-xl text-gold mt-0.5 flex-shrink-0"></i>
+                    <p class="text-gray-text text-sm leading-relaxed">… executives and leaders are stepping into new roles, navigating transformation, or growing into the leader their organization needs next.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <i class="ri-arrow-right-circle-fill text-xl text-gold mt-0.5 flex-shrink-0"></i>
+                    <p class="text-gray-text text-sm leading-relaxed">… individuals are at a career crossroads — unsure whether to grow where they are or pursue a new direction — and want clarity they can trust.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <i class="ri-arrow-right-circle-fill text-xl text-gold mt-0.5 flex-shrink-0"></i>
+                    <p class="text-gray-text text-sm leading-relaxed">… a team or organization seeks to elevate performance, strengthen collaboration, improve decision-making, or refocus to meet a critical business challenge.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <i class="ri-arrow-right-circle-fill text-xl text-gold mt-0.5 flex-shrink-0"></i>
+                    <p class="text-gray-text text-sm leading-relaxed">… a company wants people-centered workshops that help employees discover their natural abilities, strengths, and how to contribute at their best.</p>
+                </div>
+                <div class="flex items-start gap-4">
+                    <i class="ri-arrow-right-circle-fill text-xl text-gold mt-0.5 flex-shrink-0"></i>
+                    <p class="text-gray-text text-sm leading-relaxed">… they want meaningful, sustainable change — grounded in clarity, aligned leadership, and a healthier, more engaged workforce.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a class="inline-block px-8 py-3 bg-navy text-white text-sm font-semibold rounded-lg hover:bg-navy-dark transition-all" href="services.html">Explore Our Services →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL - EDIT: smaller font, added "coaching, facilitation skills and" -->
+    <section class="bg-white py-14">
+        <div class="max-w-5xl mx-auto px-6 lg:px-12 text-center">
+            <div class="text-5xl font-serif text-gold leading-none mb-4">&ldquo;</div>
+            <blockquote class="text-lg lg:text-xl font-serif text-navy leading-relaxed mb-6">
+                I have been consistently impressed with Allison's depth of knowledge, work ethic, commitment to organizational goals, coaching, facilitation skills and leadership abilities. Allison and her team consistently deliver high-quality work products and are truly committed to developing an organization's maturity level, while ensuring the team and individual leaders reach their full potential.
+            </blockquote>
+            <p class="text-sm text-gray-medium">— Executive Leader, Federal Government</p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-gray-warm py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style=""></div>
+        </div>
+        <div class="relative max-w-4xl mx-auto px-6 lg:px-12 text-center">
+            <div class="h-1 w-16 bg-gold mx-auto mb-5"></div>
+            <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-navy mb-5">Ready to Live Your Signature Path™?</h2>
+            <p class="text-base text-gray-text leading-relaxed max-w-2xl mx-auto mb-4">
+                Take the first step toward exploring your options — a consultation for you, your team, or your organization on how to unlock your signature strengths.
+            </p>
+            <div class="mb-8">
+                <img alt="Beacon Advantage Solutions" class="h-24 w-auto mx-auto" src="images/logo-dark.png">
+            </div>
+            
+            <a class="inline-block px-10 py-4 bg-gold text-navy text-base font-semibold rounded-lg hover:bg-gold-light transition-all" href="contact.html">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy-dark text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-14">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div>
+                    <img alt="Beacon Advantage Solutions" class="h-24 w-auto mb-4" style="mix-blend-mode:lighten;background:transparent" src="images/logo-new.png">
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Coaching individuals, leaders, and teams to discover their Signature Path™ and thrive with purpose.</p>
+                    <p class="text-sm text-gray-400 mb-2">Atlanta, GA</p>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-wider text-gold font-bold mb-4">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="services.html">Professional &amp; Leadership Coaching</a></li>
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="services.html">Career Coaching</a></li>
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="services.html">Team Coaching</a></li>
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="services.html">Consulting</a></li>
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="services.html">Workshops</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-wider text-gold font-bold mb-4">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="index.html">Home</a></li>
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="about.html">Who We Are</a></li>
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="services.html">What We Do</a></li>
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="testimonials.html">What Clients Say</a></li>
+                        <li><a class="text-sm text-gray-300 hover:text-gold transition-colors" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-wider text-gold font-bold mb-4">Connect</h4>
+                    <a href="https://www.linkedin.com/in/agehrlermeyer" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-10 h-10 rounded-full border-2 border-gold text-white hover:bg-gold hover:text-navy transition-all mb-4">
+                        <i class="ri-linkedin-fill text-lg"></i>
+                    </a>
+                    <a class="block mt-2 text-sm text-gold hover:text-gold-light transition-colors" href="https://www.calendly.com/bascoaching" target="_blank">Schedule Consultation →</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-8 text-center">
+                <p class="text-xs text-gray-500">&copy; 2026 Beacon Advantage Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    </script>
+</body>
+</html>
