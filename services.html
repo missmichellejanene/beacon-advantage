@@ -16,7 +16,7 @@
             extend: {
                 colors: {
                     navy: '#0B1F3B',
-                    'navy-dark': '#1a3558',
+                    'navy-dark': '#081628',
                     gold: '#D4AF37',
                     'gold-light': '#E4C65A',
                     'gray-warm': '#F8F6F3',
@@ -34,46 +34,16 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, .font-serif { font-family: 'Crimson Pro', serif; }
-    
-        .lighthouse-beam {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-            overflow: hidden;
-        }
-        .lighthouse-beam::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -20%;
-            width: 15%;
-            height: 200%;
-            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.07), rgba(255,255,255,0.04), rgba(212,175,55,0.07), transparent);
-            transform: skewX(-15deg);
-            animation: beam-sweep 8s ease-in-out infinite;
-        }
-        @keyframes beam-sweep {
-            0% { left: -20%; opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { left: 110%; opacity: 0; }
-        }
     </style>
 </head>
 <body class="bg-white">
-    <div class="lighthouse-beam"></div>
-
     <!-- NAVIGATION -->
     <nav class="fixed top-0 left-0 right-0 z-50 shadow-xl" style="background-color: #0B1F3B;">
         <div class="max-w-7xl mx-auto px-6 lg:px-10">
-            <div class="flex items-center justify-between h-24">
-                <a class="flex items-center flex-shrink-0 gap-3" href="index.html">
-                    <img alt="Beacon Advantage Solutions" class="h-24 w-auto object-contain" style="mix-blend-mode:lighten;background:transparent" src="images/logo-new.png"></span>
-                    <span class="text-white font-serif text-lg font-medium hidden sm:block">Beacon Advantage Solutions</a>
+            <div class="flex items-center justify-between h-20">
+                <a class="flex items-center flex-shrink-0" href="index.html">
+                    <img alt="Beacon Advantage Solutions" class="h-14 w-auto object-contain" style="mix-blend-mode:lighten;background:transparent" src="images/logo-transparent.png">
+                </a>
                 <div class="hidden lg:flex items-center gap-6">
                     <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="index.html">Home</a>
                     <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="about.html">Who We Are</a>
@@ -102,7 +72,7 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="h-1 w-20 bg-gold mb-5"></div>
             <h1 class="text-4xl lg:text-5xl font-serif font-semibold text-white mb-4">What We Do</h1>
-            <p class="text-base text-gray-300 max-w-2xl">Every leader and professional has a <strong>Signature Path</strong>™ — the unique intersection of natural abilities, values, motivations and style. <span class="text-gold">Living Your Signature Path™</span> helps individuals, leaders, teams and organizations rediscover the work they're meant to do now — so they can lead, contribute, and thrive with purpose.</p>
+            <p class="text-base text-gray-300 max-w-2xl">Every leader and professional has a <strong>Signature Path</strong>™ — the unique intersection of natural abilities, values, motivations and style. <span class="text-gold">Living Your Signature Path™</span> helps individuals, leaders, teams and organizations through a science-based, human-centered process so they can lead, contribute, and thrive with purpose.</p>
         </div>
     </section>
 
@@ -135,7 +105,7 @@
     </section>
 
     <!-- SERVICE 1: PROFESSIONAL & LEADERSHIP COACHING -->
-    <section class="bg-white py-12" id="professional-coaching">
+    <section class="bg-white py-10" id="professional-coaching">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -155,14 +125,14 @@
                     <p class="text-xs italic text-gray-medium">This is leadership and professional development that honors both <strong>who you are</strong> and <strong>the impact you want to create.</strong></p>
                 </div>
                 <div>
-                    <img alt="Professional and Leadership Coaching" class="w-full rounded-xl shadow-lg" src="images/leadership-coaching.png">
+                    <img alt="Professional and Leadership Coaching" class="w-full rounded-xl shadow-lg" src="images/executive-coaching.png">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SERVICE 2: CAREER COACHING -->
-    <section class="bg-gray-warm py-12" id="career-coaching">
+    <section class="bg-gray-warm py-10" id="career-coaching">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="order-2 lg:order-1">
@@ -183,14 +153,14 @@
                     <p class="text-xs italic text-gray-medium">This is for individuals who want meaningful, energizing work — not just another job.</p>
                 </div>
                 <div class="order-1 lg:order-2">
-                    <img alt="Career Coaching" class="w-full rounded-xl shadow-lg" src="images/executive-coaching.png">
+                    <img alt="Career Coaching" class="w-full rounded-xl shadow-lg" src="images/pillar-individual.jpg">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- SERVICE 3: TEAM COACHING -->
-    <section class="bg-white py-12" id="team-coaching">
+    <section class="bg-white py-10" id="team-coaching">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -218,7 +188,7 @@
     </section>
 
     <!-- SERVICE 4: CONSULTING -->
-    <section class="bg-gray-warm py-12" id="consulting">
+    <section class="bg-gray-warm py-10" id="consulting">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="order-2 lg:order-1">
@@ -247,7 +217,7 @@
     </section>
 
     <!-- SERVICE 5: WORKSHOPS -->
-    <section class="bg-white py-12" id="workshops">
+    <section class="bg-white py-10" id="workshops">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
@@ -273,16 +243,24 @@
         </div>
     </section>
 
-
+    <!-- CLIENT STORIES COMING SOON -->
+    <section class="bg-navy py-12">
+        <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center">
+            <div class="h-1 w-16 bg-gold mx-auto mb-4"></div>
+            <h2 class="text-2xl font-serif font-semibold text-white mb-3">Client Stories &amp; Results</h2>
+            <p class="text-sm text-gray-300">Case studies and testimonials coming soon — real stories of transformation from individuals, leaders, and teams who discovered their Signature Path™.</p>
+        </div>
+    </section>
 
     <!-- CTA -->
-    <section class="bg-white py-16">
+    <section class="bg-navy py-14">
         <div class="max-w-4xl mx-auto px-6 lg:px-12 text-center">
             <div class="h-1 w-16 bg-gold mx-auto mb-5"></div>
-            <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-navy mb-4">Ready to Live Your Signature Path?</h2>
-            <p class="text-sm text-gray-text leading-relaxed max-w-2xl mx-auto mb-8">
+            <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-white mb-4">Ready to Live Your Signature Path?</h2>
+            <p class="text-sm text-gray-300 leading-relaxed max-w-2xl mx-auto mb-4">
                 Take the first step toward exploring your options — a consultation for you, your team, or your organization on how to unlock your signature strengths.
             </p>
+            <div class="mb-6"><img alt="Beacon Advantage Solutions" class="h-14 w-auto mx-auto" style="mix-blend-mode:lighten;background:transparent" src="images/logo-transparent.png"></div>
             <a class="inline-block px-10 py-4 bg-gold text-navy text-base font-semibold rounded-lg hover:bg-gold-light transition-all" href="contact.html">Book a Consultation</a>
         </div>
     </section>
@@ -292,10 +270,10 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12 py-14">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
                 <div>
-                    <img alt="Beacon Advantage Solutions" class="h-24 w-auto mb-4" style="mix-blend-mode:lighten;background:transparent" src="images/logo-new.png">
+                    <img alt="Beacon Advantage Solutions" class="h-12 w-auto mb-4" style="mix-blend-mode:lighten;background:transparent" src="images/logo-transparent.png">
                     <p class="text-sm text-gray-400 leading-relaxed mb-3">Coaching individuals, leaders, and teams to discover their Signature Path™ and thrive with purpose.</p>
                     <p class="text-sm text-gray-400 mb-1">Atlanta, GA</p>
-                    <p class="text-sm text-gray-400">Proud Affiliate of The Highlands Company</p>
+                    <p class="text-sm text-gray-400">An affiliate of The Highlands Company</p>
                 </div>
                 <div>
                     <h4 class="text-xs uppercase tracking-wider text-gold font-bold mb-4">Services</h4>
@@ -322,7 +300,8 @@
                     <a href="https://www.linkedin.com/in/agehrlermeyer" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-10 h-10 rounded-full border-2 border-gold text-white hover:bg-gold hover:text-navy transition-all mb-4">
                         <i class="ri-linkedin-fill text-lg"></i>
                     </a>
-                    <a class="block mt-2 text-sm text-gold hover:text-gold-light transition-colors" href="https://calendly.com/bascoaching/30min" target="_blank">Contact Us →</a>
+                    <p class="text-sm text-gray-400 mt-2">aemeyer@bascoaching.com</p>
+                    <a class="block mt-2 text-sm text-gold hover:text-gold-light transition-colors" href="contact.html">Contact Us →</a>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-10 pt-8 text-center">
