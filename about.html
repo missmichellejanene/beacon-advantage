@@ -16,7 +16,7 @@
             extend: {
                 colors: {
                     navy: '#0B1F3B',
-                    'navy-dark': '#1a3558',
+                    'navy-dark': '#081628',
                     gold: '#D4AF37',
                     'gold-light': '#E4C65A',
                     'gray-warm': '#F8F6F3',
@@ -34,46 +34,16 @@
     <style>
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, .font-serif { font-family: 'Crimson Pro', serif; }
-    
-        .lighthouse-beam {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-            overflow: hidden;
-        }
-        .lighthouse-beam::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -20%;
-            width: 15%;
-            height: 200%;
-            background: linear-gradient(90deg, transparent, rgba(212,175,55,0.07), rgba(255,255,255,0.04), rgba(212,175,55,0.07), transparent);
-            transform: skewX(-15deg);
-            animation: beam-sweep 8s ease-in-out infinite;
-        }
-        @keyframes beam-sweep {
-            0% { left: -20%; opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { left: 110%; opacity: 0; }
-        }
     </style>
 </head>
 <body class="bg-white">
-    <div class="lighthouse-beam"></div>
-
     <!-- NAVIGATION -->
     <nav class="fixed top-0 left-0 right-0 z-50 shadow-xl" style="background-color: #0B1F3B;">
         <div class="max-w-7xl mx-auto px-6 lg:px-10">
-            <div class="flex items-center justify-between h-24">
-                <a class="flex items-center flex-shrink-0 gap-3" href="index.html">
-                    <img alt="Beacon Advantage Solutions" class="h-24 w-auto object-contain" style="mix-blend-mode:lighten;background:transparent" src="images/logo-new.png"></span>
-                    <span class="text-white font-serif text-lg font-medium hidden sm:block">Beacon Advantage Solutions</a>
+            <div class="flex items-center justify-between h-20">
+                <a class="flex items-center flex-shrink-0" href="index.html">
+                    <img alt="Beacon Advantage Solutions" class="h-14 w-auto object-contain" style="mix-blend-mode:lighten;background:transparent" src="images/logo.png">
+                </a>
                 <div class="hidden lg:flex items-center gap-6">
                     <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="index.html">Home</a>
                     <a class="text-sm font-medium text-gold" href="about.html">Who We Are</a>
@@ -98,54 +68,52 @@
     </nav>
 
     <!-- HERO -->
-    <section class="relative overflow-hidden" style="min-height: 450px; padding-top: 80px;">
-        <div class="absolute inset-0">
-            <img alt="Lighthouse at sunset" class="w-full h-full object-cover" style="object-position: center 20%;" src="images/lighthouse-hero.png">
-            <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(11,31,59,0.75), rgba(11,31,59,0.50));"></div>
-        </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20">
+    <section class="bg-navy pt-28 pb-14">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex justify-center mb-6">
+                <img alt="Beacon Advantage Solutions" class="h-16 w-auto" style="mix-blend-mode:lighten;background:transparent" src="images/logo.png">
+            </div>
             <div class="h-1 w-20 bg-gold mb-5"></div>
-            <h1 class="text-5xl lg:text-6xl font-serif font-semibold text-white mb-4">Who We Are</h1>
-            <p class="text-xl text-gray-300 max-w-2xl">"Your Signature Path: Navigating Pivots with Purpose" — Coaching and leading in complex environments — with people at the center driving results.</p>
+            <h1 class="text-4xl lg:text-5xl font-serif font-semibold text-white mb-4">Who We Are</h1>
+            <p class="text-lg text-gray-300 max-w-2xl">"Your Signature Path: Navigating Pivots with Purpose" — Coaching and leading in complex environments — with people at the center driving results.</p>
         </div>
     </section>
 
-    <!-- THE BEACON ADVANTAGE — Allison's original verbiage per her Google Doc -->
-    <section class="bg-gray-warm py-14">
+    <!-- COMBINED: Team intro + The Beacon Advantage (per Allison: combine first paragraph and Beacon Advantage section) -->
+    <section class="bg-gray-warm py-10">
         <div class="max-w-5xl mx-auto px-6 lg:px-12">
             <div class="h-1 w-20 bg-gold mb-5"></div>
             <h2 class="text-3xl font-serif font-semibold text-navy mb-5">The Beacon Advantage</h2>
-            <!-- Allison's original paragraph (from her WHO WE ARE PAGE 2 doc note) -->
-            <p class="text-sm text-gray-text leading-relaxed mb-6">Our team is comprised of senior consultants who have spent their careers working in-house at a range of companies in operations, finance, marketing, strategy and organization effectiveness, making things happen and driving business results. We have over 20+ years working with Fortune 500, mid-sized and Federal and Local Governments clients. Our consulting practice focuses on coaching and leading people and business transformation efforts through proven data driven, practical and innovative solutions that drive the results our clients desire.</p>
+            <p class="text-sm text-gray-text leading-relaxed mb-3">Our team is comprised of consultants and coaches who have held leadership and consulting roles in-house and in consulting firms across industries and functions.</p>
+            <p class="text-sm text-gray-text leading-relaxed mb-6">We have over 20+ years of experience working with Fortune 500, mid-sized, and Federal and Local Government clients. Our consulting practice focuses on coaching and leading people and business transformation efforts through proven, data-driven, practical, and innovative solutions that drive the results our clients desire.</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="flex flex-col items-start">
                     <div class="w-14 h-14 rounded-full bg-gold/10 border-2 border-gold flex items-center justify-center mb-4">
                         <i class="ri-building-line text-2xl text-gold"></i>
                     </div>
                     <h3 class="text-base font-sans font-bold text-navy mb-2">Board and Organizational Leaders</h3>
-                    <p class="text-sm text-gray-text leading-relaxed">Board and Organizational Leaders in multiple industries providing a unique perspective on how to obtain results with people in mind.</p>
+                    <p class="text-sm text-gray-text leading-relaxed">Former Board and Organizational Leader in multiple industries providing a unique perspective on how to obtain results with people in mind.</p>
                 </div>
                 <div class="flex flex-col items-start">
                     <div class="w-14 h-14 rounded-full bg-gold/10 border-2 border-gold flex items-center justify-center mb-4">
                         <i class="ri-compass-3-line text-2xl text-gold"></i>
                     </div>
                     <h3 class="text-base font-sans font-bold text-navy mb-2">Guiding People and Organizations</h3>
-                    <p class="text-sm text-gray-text leading-relaxed">Experts in guiding people and organizations through large-scale change, team realignment, or professional transitions across industries.</p>
+                    <p class="text-sm text-gray-text leading-relaxed">Expert in guiding people and organizations through large-scale change, team realignment, or professional transitions across industries.</p>
                 </div>
                 <div class="flex flex-col items-start">
                     <div class="w-14 h-14 rounded-full bg-gold/10 border-2 border-gold flex items-center justify-center mb-4">
                         <i class="ri-heart-pulse-line text-2xl text-gold"></i>
                     </div>
                     <h3 class="text-base font-sans font-bold text-navy mb-2">Proven Results</h3>
-                    <!-- Allison's exact Proven Results verbiage from her doc -->
-                    <p class="text-sm text-gray-text leading-relaxed">A trusted partner delivering clarity, alignment, and people-powered transformation with measurable results.</p>
+                    <p class="text-sm text-gray-text leading-relaxed">Organizations gain a trusted partner that delivers clarity, alignment, and people-powered transformation — producing measurable improvements in culture, leadership effectiveness, and performance.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ALLISON BIO -->
-    <section class="bg-white py-16">
+    <section class="bg-white py-12">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 <div class="relative">
@@ -171,9 +139,9 @@
     </section>
 
     <!-- OUR APPROACH -->
-    <section class="bg-gray-warm py-16">
+    <section class="bg-gray-warm py-10">
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="text-center mb-10">
+            <div class="text-center mb-8">
                 <div class="h-1 w-20 bg-gold mx-auto mb-5"></div>
                 <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-navy mb-4">Our Approach</h2>
                 <p class="text-base text-gray-text max-w-3xl mx-auto">Beacon Advantage Solutions operates at the intersection of finding individuals', leaders', and teams' strengths — where development and transition lead to more energized work.</p>
@@ -212,7 +180,7 @@
     </section>
 
     <!-- THE HIGHLANDS COMPANY -->
-    <section class="bg-white py-16">
+    <section class="bg-white py-10">
         <div class="max-w-5xl mx-auto px-6 lg:px-12">
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 items-center">
                 <div class="lg:col-span-3">
@@ -221,21 +189,28 @@
                     <p class="text-sm text-gray-text leading-relaxed mb-3">Beacon Advantage Solutions is a proud affiliate of The Highlands Company, whose science-based assessment tools form the foundation of the Signature Path™ experience. The Highlands Ability Battery (HAB) measures natural abilities — the hardwired ways people process information, solve problems, and interact with the world.</p>
                     <p class="text-sm text-gray-text leading-relaxed">These insights, combined with Allison's deep coaching expertise, create a uniquely powerful experience that goes beyond traditional coaching to uncover the work each person is wired to do.</p>
                 </div>
-                <div class="lg:col-span-2 flex justify-center items-center">
-                    <a href="https://www.highlandsco.com/" target="_blank" rel="noopener noreferrer"><img alt="The Highlands Company - Transforming Careers Since 1992" class="w-full max-w-xs hover:opacity-80 transition-opacity" src="images/highlands-logo-new.png"></a>
+                <div class="lg:col-span-2 flex justify-center">
+                    <div class="w-40 h-40 rounded-full bg-gold/10 border-2 border-gold flex items-center justify-center">
+                        <i class="ri-compass-discover-line text-5xl text-gold"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
-    <section class="bg-gray-warm py-20 relative overflow-hidden">
+    <section class="bg-navy py-14 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #D4AF37 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
         <div class="relative max-w-4xl mx-auto px-6 lg:px-12 text-center">
             <div class="h-1 w-16 bg-gold mx-auto mb-5"></div>
-            <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-navy mb-5">Ready to Discover Your Signature Path?</h2>
-            <p class="text-base text-gray-text leading-relaxed max-w-2xl mx-auto mb-8">
+            <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-white mb-5">Ready to Discover Your Signature Path?</h2>
+            <div class="mb-5"><img alt="Beacon Advantage Solutions" class="h-14 w-auto mx-auto" style="mix-blend-mode:lighten;background:transparent" src="images/logo.png"></div>
+            <p class="text-base text-gray-300 leading-relaxed max-w-2xl mx-auto mb-6">
                 Take the first step toward clarity, alignment, and purpose. Schedule a confidential consultation today.
             </p>
+            <p class="text-sm text-gray-400 mt-4 mb-5">An affiliate of The Highlands Company</p>
             <a class="inline-block px-10 py-3.5 bg-gold text-navy text-base font-semibold rounded-lg hover:bg-gold-light transition-all" href="contact.html">Book a Consultation</a>
         </div>
     </section>
@@ -245,10 +220,10 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12 py-14">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
                 <div>
-                    <img alt="Beacon Advantage Solutions" class="h-24 w-auto mb-4" style="mix-blend-mode:lighten;background:transparent" src="images/logo-new.png">
-                    <p class="text-sm text-gray-400 leading-relaxed mb-3">Coaching individuals, leaders, and teams to discover their Signature Path™ and thrive with purpose.</p>
+                    <img alt="Beacon Advantage Solutions" class="h-12 w-auto mb-4" style="mix-blend-mode:lighten;background:transparent" src="images/logo.png">
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Coaching individuals, leaders, and teams to discover their Signature Path™ and thrive with purpose.</p>
                     <p class="text-sm text-gray-400 mb-1">Atlanta, GA</p>
-                    <p class="text-sm text-gray-400">Proud Affiliate of The Highlands Company</p>
+                    <p class="text-sm text-gray-400">An affiliate of The Highlands Company</p>
                 </div>
                 <div>
                     <h4 class="text-xs uppercase tracking-wider text-gold font-bold mb-4">Services</h4>
@@ -275,7 +250,8 @@
                     <a href="https://www.linkedin.com/in/agehrlermeyer" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-10 h-10 rounded-full border-2 border-gold text-white hover:bg-gold hover:text-navy transition-all mb-4">
                         <i class="ri-linkedin-fill text-lg"></i>
                     </a>
-                    <a class="block mt-2 text-sm text-gold hover:text-gold-light transition-colors" href="https://www.calendly.com/bascoaching" target="_blank">Contact Us →</a>
+                    <p class="text-sm text-gray-400 mt-2">aemeyer@bascoaching.com</p>
+                    <a class="block mt-2 text-sm text-gold hover:text-gold-light transition-colors" href="contact.html">Contact Us →</a>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-10 pt-8 text-center">
