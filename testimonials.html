@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Clients Say | Beacon Advantage Solutions</title>
+    <meta name="description" content="Real stories from leaders, professionals, and teams who discovered their Signature Path with Beacon Advantage Solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    navy: '#0B1F3B',
+                    'navy-dark': '#1a3558',
+                    gold: '#D4AF37',
+                    'gold-light': '#E4C65A',
+                    'gray-warm': '#F8F6F3',
+                    'gray-text': '#4A4A4A',
+                    'gray-medium': '#7A7A7A',
+                },
+                fontFamily: {
+                    serif: ['Crimson Pro', 'serif'],
+                    sans: ['Inter', 'sans-serif'],
+                }
+            }
+        }
+    }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Crimson Pro', serif; }
+        .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .reveal.visible { opacity: 1; transform: none; }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .lighthouse-beam { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 9999; overflow: hidden; }
+        .lighthouse-beam::after { content: ''; position: absolute; top: -50%; left: -20%; width: 15%; height: 200%; background: linear-gradient(90deg, transparent, rgba(212,175,55,0.07), rgba(255,255,255,0.04), rgba(212,175,55,0.07), transparent); transform: skewX(-15deg); animation: beam-sweep 8s ease-in-out infinite; }
+        @keyframes beam-sweep { 0% { left: -20%; opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { left: 110%; opacity: 0; } }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="lighthouse-beam"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-50 shadow-xl" style="background-color: #0B1F3B;">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="flex items-center justify-between h-24">
+                <a class="flex items-center flex-shrink-0" href="index.html">
+                    <img alt="Beacon Advantage Solutions" class="h-24 w-auto object-contain" style="mix-blend-mode:lighten;background:transparent" src="images/logo-new.png">
+                </a>
+                <div class="hidden lg:flex items-center gap-6">
+                    <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="index.html">Home</a>
+                    <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="about.html">Who We Are</a>
+                    <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="services.html">What We Do</a>
+                    <a class="text-sm font-medium text-gold" href="testimonials.html">What Clients Say</a>
+                    <a class="text-sm font-medium text-white hover:text-gold transition-colors" href="contact.html">Contact</a>
+                    <a class="text-sm font-semibold rounded-lg px-5 py-2.5 transition-all hover:opacity-90" href="https://calendly.com/bascoaching/30min" target="_blank" style="background-color: #D4AF37; color: #0B1F3B;">Book 30-Min Call</a>
+                </div>
+                <button class="lg:hidden text-white p-2" id="mobile-toggle" aria-label="Toggle menu">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+            <div class="lg:hidden hidden pb-4" id="mobile-menu">
+                <a class="block py-2 text-white" href="index.html">Home</a>
+                <a class="block py-2 text-white" href="about.html">Who We Are</a>
+                <a class="block py-2 text-white" href="services.html">What We Do</a>
+                <a class="block py-2 text-gold" href="testimonials.html">What Clients Say</a>
+                <a class="block py-2 text-white" href="contact.html">Contact</a>
+                <a class="block py-2 text-gold font-semibold" href="https://calendly.com/bascoaching/30min" target="_blank">Book 30-Min Call</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-navy pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="h-1 w-20 bg-gold mb-6"></div>
+            <h1 class="text-4xl lg:text-6xl font-serif font-semibold text-white mb-6">What Clients Say</h1>
+            <p class="text-xl text-gray-300 max-w-2xl">Real stories from individuals, leaders, and teams who found their Signature Path and transformed their careers and organizations.</p>
+        </div>
+    </section>
+
+    <section class="bg-gray-warm py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white rounded-2xl p-10 card-hover reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gold mb-4">Professional Coaching</p>
+                    <blockquote class="text-lg font-serif italic text-gray-text leading-relaxed mb-6">"Allison has a unique ability to connect with individuals at all stages of their career — whether you are just getting started or you are an established executive in the C-suite. She brings a wealth of experience to the table, but more importantly, a passion for people that truly goes above and beyond."</blockquote>
+                    <p class="text-sm font-semibold text-navy uppercase tracking-wider">Consulting and Career Support</p>
+                </div>
+                <div class="bg-navy rounded-2xl p-10 card-hover reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gold mb-4">Executive / Leadership Coaching</p>
+                    <blockquote class="text-lg font-serif italic text-gray-200 leading-relaxed mb-6">"I have been consistently impressed with Allison's depth of knowledge, work ethic, commitment to organizational goals, coaching, facilitation skills and leadership abilities. Allison and her team consistently deliver high-quality work products and are truly committed to developing an organization's maturity level, while ensuring the team and individual leaders reach their full potential."</blockquote>
+                    <p class="text-sm font-semibold text-gold uppercase tracking-wider">Executive Leader, Federal Government</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white rounded-2xl p-10 card-hover reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gold mb-4">Executive / Leadership Coaching</p>
+                    <blockquote class="text-lg font-serif italic text-gray-text leading-relaxed mb-6">"Allison's coaching helped me see that I deserve better and provided me with the space to think big without limits. She instilled confidence in me. Allison helped me to set goals and kept me accountable. She gave me good ideas for creating a support network and a team around me. The time was invaluable."</blockquote>
+                    <p class="text-sm font-semibold text-navy uppercase tracking-wider">New Company and Position Transition</p>
+                </div>
+                <div class="bg-white rounded-2xl p-10 card-hover reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gold mb-4">Executive / Leadership Coaching</p>
+                    <blockquote class="text-lg font-serif italic text-gray-text leading-relaxed mb-6">"Allison and I have been working together for 3 years. Her executive coaching skills are exceptional. She has a wealth of personal experience to draw from, which strengthens points of focus. We have worked on action plans and personal branding. While working with her I have experienced several job changes and promotions. Allison delivers results for her clients and helps them achieve their potential."</blockquote>
+                    <p class="text-sm font-semibold text-navy uppercase tracking-wider">Leadership Promotion</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white rounded-2xl p-10 card-hover reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gold mb-4">Leadership and Career Coaching</p>
+                    <blockquote class="text-lg font-serif italic text-gray-text leading-relaxed mb-6">"I worked with Allison for several years, including a client project with deeply divided leaders who needed significant alignment. I learned so much from her approach to leadership coaching and managing challenging interpersonal dynamics. Allison's guidance strengthened my skills, confidence, and ability to handle complex client work. Working with her was truly impactful, and the growth she helped me achieve is something I still rely on today. Although we no longer work together, Allison has made it a point to stay in touch and continues to support my personal and career development. I highly recommend working with Allison — whether for your team or individually."</blockquote>
+                    <p class="text-sm font-semibold text-navy uppercase tracking-wider">Mid Career Transition</p>
+                </div>
+                <div class="bg-white rounded-2xl p-10 card-hover reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gold mb-4">Leadership Coaching</p>
+                    <blockquote class="text-lg font-serif italic text-gray-text leading-relaxed mb-6">"Allison coached me through a project to systematize and formalize a new product-decisioning model. She asked the questions which allowed me to think through the process differently. The result was a project that was more complete, useful and valuable. It has been adopted in multiple parts of our billion-dollar company to quantify and improve decision making. Allison's input and guidance was truly invaluable."</blockquote>
+                    <p class="text-sm font-semibold text-navy uppercase tracking-wider">Building Skills and Competence</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                <div class="bg-white rounded-2xl p-10 card-hover reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gold mb-4">Career Coaching</p>
+                    <blockquote class="text-lg font-serif italic text-gray-text leading-relaxed mb-6">"Allison has been an incredible career coach and mentor to me in my current role and exemplifies what it means to be a truly exceptional leader. Beyond her leadership on projects, Allison is an outstanding personal coach. She has played a key role in helping me grow my leadership skills, offering thoughtful guidance, constructive feedback, and unwavering encouragement. Her impact on my professional development has been significant and lasting."</blockquote>
+                    <p class="text-sm font-semibold text-navy uppercase tracking-wider">Mid Career Change</p>
+                </div>
+                <div class="bg-white rounded-2xl p-10 card-hover reveal">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-gold mb-4">Team Coaching</p>
+                    <blockquote class="text-lg font-serif italic text-gray-text leading-relaxed mb-6">"I have known Allison Ehrler Meyer for many years and have worked directly with her in her role as a consultant in support of our organizational change initiatives. The organizational change services provided by Allison have been exceptionally good. The facilitation, executive coaching, and guidance provided were essential to the success of taking a new, inexperienced team to a much higher level while improving the overall processes and building capabilities."</blockquote>
+                    <p class="text-sm font-semibold text-navy uppercase tracking-wider">Organizational Change and Team Development</p>
+                </div>
+            </div>
+            <div class="bg-navy rounded-2xl p-10 card-hover reveal">
+                <p class="text-xs font-semibold uppercase tracking-widest text-gold mb-4">Professional Coaching — Early Career</p>
+                <blockquote class="text-lg font-serif italic text-gray-200 leading-relaxed mb-6 max-w-4xl">"When I started working with Allison, I was only four months out of college and stepping into my first real job. I was so grateful to learn from someone with her level of experience and genuine investment in helping her team grow. Allison's ability to balance her fun, positive energy with professionalism made even tough situations approachable. She is the kind of coach who makes growth feel real and tailored to individual needs."</blockquote>
+                <p class="text-sm font-semibold text-gold uppercase tracking-wider">Junior Consultant</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-navy py-16 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5" style="background-image:radial-gradient(circle at 2px 2px,#D4AF37 1px,transparent 0);background-size:40px 40px;"></div>
+        <div class="relative max-w-3xl mx-auto px-6 lg:px-12">
+            <div class="h-1 w-16 bg-gold mx-auto mb-6"></div>
+            <h2 class="text-3xl lg:text-4xl font-serif font-semibold text-white mb-4">Ready to Write Your Own Story?</h2>
+            <p class="text-base text-gray-300 leading-relaxed mb-8">Take the first step toward exploring your options — a consultation for you, your team, or your organization.</p>
+            <a class="inline-block px-10 py-4 bg-gold text-navy text-base font-semibold rounded-lg hover:opacity-90 transition-all" href="contact.html">Book a Consultation</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="background:#070f1e;" class="text-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div>
+                    <img src="images/logo-transparent.png" alt="Beacon Advantage Solutions" class="h-10 w-auto mb-3" style="mix-blend-mode:lighten;background:transparent;">
+                    <p class="text-sm text-gray-400 leading-relaxed mb-2">Coaching individuals, leaders, and teams to discover their Signature Path™ and thrive with purpose.</p>
+                    <p class="text-sm text-gray-400 mb-1">Atlanta, GA</p>
+                    <p class="text-sm text-gray-400">An affiliate of The Highlands Company</p>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-wider text-gold font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#professional-coaching" class="text-sm text-gray-300 hover:text-gold transition-colors">Professional &amp; Leadership Coaching</a></li>
+                        <li><a href="services.html#career-coaching" class="text-sm text-gray-300 hover:text-gold transition-colors">Career Coaching</a></li>
+                        <li><a href="services.html#team-coaching" class="text-sm text-gray-300 hover:text-gold transition-colors">Team Coaching</a></li>
+                        <li><a href="services.html#consulting" class="text-sm text-gray-300 hover:text-gold transition-colors">Consulting</a></li>
+                        <li><a href="services.html#workshops" class="text-sm text-gray-300 hover:text-gold transition-colors">Workshops</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-wider text-gold font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-sm text-gray-300 hover:text-gold transition-colors">Home</a></li>
+                        <li><a href="about.html" class="text-sm text-gray-300 hover:text-gold transition-colors">Who We Are</a></li>
+                        <li><a href="services.html" class="text-sm text-gray-300 hover:text-gold transition-colors">What We Do</a></li>
+                        <li><a href="testimonials.html" class="text-sm text-gray-300 hover:text-gold transition-colors">What Clients Say</a></li>
+                        <li><a href="contact.html" class="text-sm text-gray-300 hover:text-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-wider text-gold font-bold mb-4">Connect</h4>
+                    <p class="text-sm text-gray-400 mb-3">aemeyer@bascoaching.com</p>
+                    <a href="contact.html" class="text-sm text-gold hover:text-gold-light transition-colors">Contact Us →</a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-10 pt-6 text-center">
+                <p class="text-xs text-gray-500">© 2026 Beacon Advantage Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => entry.target.classList.add("visible"), i * 80);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    reveals.forEach(r => observer.observe(r));
+    </script>
+</body>
+</html>
